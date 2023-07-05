@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Insure Landing Page | Frontendmentor.io</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center justify-between px-5 py-5">
+      <!-- logo -->
+      <a href="#">
+        <img src="./images/logo.svg" alt="site logo on header" />
+      </a>
+      <!-- END logo -->
+
+      <!-- mobile toggler icon -->
+      <button
+        role="navigation-toggler"
+        onclick="toggleMobileMenu()"
+        id="toggler"
+        class="cursor-pointer border-2 border-dark-violet px-2 py-3 md:hidden"
+      >
+        <span class="mb-1 block h-0.5 w-5 bg-dark-violet"></span>
+        <span class="mb-1 block h-0.5 w-5 bg-dark-violet"></span>
+        <span class="block h-0.5 w-5 bg-dark-violet"></span>
+      </button>
+      <!-- END mobile toggler icon -->
+
+      <!-- desktop menu as a separate div -->
+      <div class="hidden gap-5 md:flex">
+        <ul
+          class="flex items-center gap-5 font-karla text-base uppercase text-dark-grayish-violet"
+        >
+          <li>
+            <a
+              class="transition-all duration-75 hover:text-dark-violet"
+              href="#"
+              >how we work</a
+            >
+          </li>
+          <li>
+            <a
+              class="transition-all duration-75 hover:text-dark-violet"
+              href="#"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="transition-all duration-75 hover:text-dark-violet"
+              href="#"
+              >account</a
+            >
+          </li>
+        </ul>
+        <button
+          class="border border-dark-violet px-4 py-2 font-karla font-semibold uppercase text-dark-violet transition-all duration-75 hover:bg-very-dark-violet hover:text-very-light-gray"
+        >
+          view plans
+        </button>
+      </div>
+      <!-- END desktop menu  -->
+    </header>
+    <!-- end header -->
+
+    <!-- mobile menu as a separate div -->
+    <div
+      id="mobileMenu"
+      class="hidden min-h-[36.25rem] bg-very-dark-violet bg-mobile-pattern bg-contain bg-bottom bg-no-repeat md:hidden"
+    >
+      <ul
+        id="mobileMenuList"
+        role="list"
+        class="animate__animated animate__zoomIn invisible flex flex-col gap-5 bg-transparent pt-10 text-center font-karla text-xl font-semibold uppercase text-very-light-gray"
+      >
+        <li><a href="#">How we work</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Account</a></li>
+        <button
+          class="mx-auto block w-80 border border-very-light-gray px-3 py-3 uppercase"
+        >
+          view plans
+        </button>
+      </ul>
+    </div>
+    <!-- END mobile menu -->
+
+    <!-- hero/main section -->
+    <main class="bg-dark-violet">
+      <img
+        src="./images/image-intro-mobile.jpg"
+        alt="picture with two kids, man and women, holding each others hands "
+      />
+      <div class="px-2 py-20 text-center text-white">
+        <h1 class="font-dm text-5xl">Humanizing your insurance.</h1>
+        <p>
+          Get your life insurance coverage easier and faster. We blend our
+          expertise and technology to help you find the plan that’s right for
+          you. Ensure you and your loved ones are protected.
+        </p>
+        <button class="capitalize">view plans</button>
+      </div>
+    </main>
+
+    <!-- END hero/main section -->
+    <script src="./main.js"></script>
+  </body>
+</html>
