@@ -2674,13 +2674,68 @@ video {
   top: 0px;
 }
 
+.top-\[500px\]{
+  top: 500px;
+}
+
+.top-\[200px\]{
+  top: 200px;
+}
+
+.top-32{
+  top: 8rem;
+}
+
+.bottom-52{
+  bottom: 13rem;
+}
+
+.bottom-28{
+  bottom: 7rem;
+}
+
+.top-40{
+  top: 10rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
 .z-50{
   z-index: 50;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.-z-10{
+  z-index: -10;
+}
+
+.-z-50{
+  z-index: -50;
+}
+
+.-z-30{
+  z-index: -30;
+}
+
+.-z-20{
+  z-index: -20;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-30{
+  z-index: 30;
+}
+
+.z-\[150\]{
+  z-index: 150;
 }
 
 .mx-4{
@@ -2688,8 +2743,17 @@ video {
   margin-right: 1rem;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
 }
 
 .mb-6{
@@ -2712,20 +2776,24 @@ video {
   margin-top: 0.75rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
-}
-
 .block{
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
+}
+
+.inline-grid{
+  display: inline-grid;
 }
 
 .hidden{
@@ -2764,12 +2832,20 @@ video {
   width: 100vw;
 }
 
-.max-w-\[375px\]{
-  max-width: 375px;
+.w-6\/12{
+  width: 50%;
+}
+
+.w-44{
+  width: 11rem;
 }
 
 .max-w-screen-fixed-width{
   max-width: 90rem;
+}
+
+.max-w-\[375px\]{
+  max-width: 375px;
 }
 
 .cursor-pointer{
@@ -2778,6 +2854,10 @@ video {
 
 .list-none{
   list-style-type: none;
+}
+
+.flex-row-reverse{
+  flex-direction: row-reverse;
 }
 
 .flex-col{
@@ -2951,9 +3031,9 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
+.py-\[4\.8rem\]{
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
 }
 
 .pt-10{
@@ -3216,6 +3296,18 @@ button.is-clicked span:nth-of-type(3) {
 }
 
 @media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:top-32{
+    top: 8rem;
+  }
+
   .md\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -3226,6 +3318,10 @@ button.is-clicked span:nth-of-type(3) {
     margin-right: 2rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -3234,8 +3330,24 @@ button.is-clicked span:nth-of-type(3) {
     display: none;
   }
 
+  .md\:max-w-none{
+    max-width: none;
+  }
+
+  .md\:flex-1{
+    flex: 1 1 0%;
+  }
+
+  .md\:flex-grow{
+    flex-grow: 1;
+  }
+
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
 
   .md\:justify-between{
@@ -3254,11 +3366,6 @@ button.is-clicked span:nth-of-type(3) {
   .md\:before\:left-0::before{
     content: var(--tw-content);
     left: 0px;
-  }
-
-  .md\:before\:left-4::before{
-    content: var(--tw-content);
-    left: 1rem;
   }
 
   .md\:before\:mx-0::before{
@@ -3293,12 +3400,25 @@ button.is-clicked span:nth-of-type(3) {
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .lg\:mt-0{
     margin-top: 0px;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:flex-wrap{
@@ -3313,9 +3433,9 @@ button.is-clicked span:nth-of-type(3) {
     justify-content: space-between;
   }
 
-  .lg\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:px-24{
@@ -3326,6 +3446,11 @@ button.is-clicked span:nth-of-type(3) {
   .lg\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:text-left{
