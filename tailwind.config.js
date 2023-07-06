@@ -23,6 +23,10 @@ module.exports = {
         "footer-mobile-pattern":
           "url('/images/patterns/bg-pattern-footer-mobile.svg')",
       },
+
+      screens: {
+        "fixed-width": "90rem",
+      },
     },
   },
   plugins: [],
