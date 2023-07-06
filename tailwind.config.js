@@ -18,6 +18,10 @@ module.exports = {
 
       backgroundImage: {
         "mobile-pattern": "url('/images/patterns/bg-pattern-mobile-nav.svg')",
+        "mobile-pattern-how-we-work":
+          "url('/images/patterns/bg-pattern-how-we-work-mobile.svg')",
+        "footer-mobile-pattern":
+          "url('/images/patterns/bg-pattern-footer-mobile.svg')",
       },
     },
   },

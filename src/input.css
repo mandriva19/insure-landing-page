@@ -35,5 +35,5 @@ button.is-clicked span:nth-of-type(3) {
 
 /* slow down animation speed for mobile menu appear */
 .animate__animated.animate__zoomIn {
-  animation-duration: 0.58s;
+  animation-duration: 0.22s;
 }
