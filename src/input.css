@@ -2,8 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
-@import "animate.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,7 +31,4 @@ button.is-clicked span:nth-of-type(3) {
   width: 1.29rem;
 }
 
-/* slow down animation speed for mobile menu appear */
-.animate__animated.animate__zoomIn {
-  animation-duration: 0.22s;
-}
+/* animate mobile menu */

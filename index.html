@@ -84,12 +84,12 @@
     <div class="relative">
       <div
         id="mobileMenu"
-        class="absolute left-0 z-50 hidden min-h-[36.25rem] w-screen bg-very-dark-violet bg-mobile-pattern bg-contain bg-bottom bg-no-repeat drop-shadow-md md:hidden"
+        class="absolute left-0 z-50 hidden min-h-[36.25rem] w-screen bg-very-dark-violet bg-mobile-pattern bg-contain bg-bottom bg-no-repeat drop-shadow-lg md:hidden"
       >
         <ul
           id="mobileMenuList"
           role="list"
-          class="animate__animated animate__zoomIn invisible flex flex-col gap-5 bg-transparent pt-10 text-center font-karla text-xl font-semibold uppercase text-very-light-gray"
+          class="invisible flex flex-col gap-5 bg-transparent pt-10 text-center font-karla text-xl font-semibold uppercase text-very-light-gray"
         >
           <li><a href="#">How we work</a></li>
           <li><a href="#">Blog</a></li>
@@ -105,20 +105,13 @@
     <!-- END mobile menu -->
 
     <!-- hero/main section -->
-    <main class="relative z-10 bg-dark-violet">
-      <div class="md:flex md:flex-row-reverse">
+    <main class="relative z-10 mx-auto max-w-screen-fixed-width bg-dark-violet">
+      <div class="md:flex">
         <div>
-          <!-- mobile img hidden from md -->
           <img
             class="mx-auto md:hidden"
             src="./images/image-intro-mobile.jpg"
             alt="picture with two kids, man and women, holding each others hands "
-          />
-          <!-- desktop img hidden by default / shown from md -->
-          <img
-            class="hidden md:block"
-            src="./images/image-intro-desktop.jpg"
-            alt="picture with two kids, man and women, holding each others hands"
           />
         </div>
 
@@ -140,14 +133,14 @@
           />
 
           <img
-            class="absolute right-0 top-40 hidden md:block"
+            class="absolute right-0 top-0 hidden md:block"
             width="200"
             src="./images/patterns/bg-pattern-intro-right-desktop.svg"
           />
 
           <div class="relative z-30">
             <h1 class="font-dm text-5xl">Humanizing your insurance.</h1>
-            <p class="mb-8 mt-3 font-karla leading-relaxed">
+            <p class="mb-8 mt-3 font-karla leading-relaxed md:w-1/2">
               Get your life insurance coverage easier and faster. We blend our
               expertise and technology to help you find the plan that’s right
               for you. Ensure you and your loved ones are protected.
