@@ -14,6 +14,7 @@
   <body>
     <!-- header -->
     <header
+      role="site-header"
       class="mx-auto flex max-w-screen-fixed-width items-center justify-between px-5 py-5 md:px-8 lg:px-16"
     >
       <!-- logo -->
@@ -105,7 +106,10 @@
     <!-- END mobile menu -->
 
     <!-- hero/main section -->
-    <main class="relative z-10 mx-auto max-w-screen-fixed-width bg-dark-violet">
+    <main
+      role="site-main-section"
+      class="relative z-10 mx-auto max-w-screen-fixed-width bg-dark-violet"
+    >
       <div class="md:flex">
         <div>
           <img
@@ -163,7 +167,7 @@
     <!-- END hero/main section -->
 
     <!-- cards section -->
-    <section class="px-4 py-32 md:px-8 lg:px-24">
+    <section role="site-cards-section" class="px-4 py-32 md:px-8 lg:px-24">
       <div class="mx-auto max-w-screen-fixed-width">
         <h1
           class="relative text-center font-dm text-5xl capitalize text-very-dark-violet before:absolute before:-inset-10 before:mx-auto before:block before:h-[0.08rem] before:w-40 before:bg-violet-500 before:opacity-60 md:text-left md:before:left-0 md:before:mx-0"
@@ -228,7 +232,7 @@
     <!-- END card section -->
 
     <!-- how we work section -->
-    <section class="mx-4 mb-32">
+    <section role="site-content" class="mx-4 mb-32">
       <div class="mx-auto max-w-screen-fixed-width">
         <div
           class="relative z-10 bg-dark-violet py-[4.8rem] text-center lg:flex lg:flex-wrap lg:items-center lg:justify-between lg:px-32"
@@ -261,6 +265,7 @@
 
     <!-- start footer -->
     <footer
+      role="site-footer"
       class="bg-very-light-gray bg-footer-mobile-pattern bg-contain bg-top bg-no-repeat py-16 md:px-8 lg:px-24"
     >
       <div class="mx-auto max-w-screen-fixed-width">
@@ -279,7 +284,11 @@
           <!-- footer social icons -->
           <div class="flex justify-center gap-3">
             <!-- icon 1 -->
-            <a class="transition-all duration-200 hover:opacity-80" href="#">
+            <a
+              aria-label="go to external link, facebook"
+              class="transition-all duration-200 hover:opacity-80"
+              href="#"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#837D88"
@@ -288,7 +297,11 @@
               </svg>
             </a>
             <!-- icon 2 -->
-            <a class="transition-all duration-200 hover:opacity-80" href="#">
+            <a
+              aria-label="go to external link, twitter"
+              class="transition-all duration-200 hover:opacity-80"
+              href="#"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
                 <path
                   fill="#837D88"
@@ -297,7 +310,11 @@
               </svg>
             </a>
             <!-- icon 3 -->
-            <a class="transition-all duration-200 hover:opacity-80" href="#">
+            <a
+              aria-label="go to external link, pinterest"
+              class="transition-all duration-200 hover:opacity-80"
+              href="#"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#837D88"
@@ -306,7 +323,11 @@
               </svg>
             </a>
             <!-- icon 4 -->
-            <a class="transition-all duration-200 hover:opacity-80" href="#">
+            <a
+              aria-label="go to external link, instagram"
+              class="transition-all duration-200 hover:opacity-80"
+              href="#"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#837D88"
@@ -324,9 +345,9 @@
         >
           <!-- footer nav block 1 -->
           <div class="font-bold md:text-left">
-            <li class="mb-6 tracking-wider text-dark-grayish-violet">
+            <p class="mb-6 tracking-wider text-dark-grayish-violet">
               our company
-            </li>
+            </p>
             <ul class="leading-7 tracking-widest">
               <li>
                 <a
@@ -360,9 +381,7 @@
           </div>
           <!-- footer nav block 2 -->
           <div class="font-bold md:text-left">
-            <li class="mb-6 tracking-wider text-dark-grayish-violet">
-              help me
-            </li>
+            <p class="mb-6 tracking-wider text-dark-grayish-violet">help me</p>
             <ul class="leading-7 tracking-wider">
               <li>
                 <a
@@ -396,9 +415,7 @@
           </div>
           <!-- footer nav block 3 -->
           <div class="font-bold md:text-left">
-            <li class="mb-6 tracking-wider text-dark-grayish-violet">
-              contact
-            </li>
+            <p class="mb-6 tracking-wider text-dark-grayish-violet">contact</p>
             <ul class="leading-7 tracking-wider">
               <li>
                 <a
@@ -425,7 +442,7 @@
           </div>
           <!-- footer nav block 4 -->
           <div class="font-bold md:text-left">
-            <li class="mb-6 tracking-wider text-dark-grayish-violet">others</li>
+            <p class="mb-6 tracking-wider text-dark-grayish-violet">others</p>
             <ul class="leading-7 tracking-wider">
               <li>
                 <a
