@@ -14,7 +14,7 @@
   <body>
     <!-- header -->
     <header
-      role="site-header"
+      role="navigation"
       class="mx-auto flex max-w-screen-fixed-width items-center justify-between px-5 py-5 md:px-8 lg:px-16"
     >
       <!-- logo -->
@@ -38,6 +38,7 @@
       <!-- desktop menu as a separate div -->
       <div class="hidden gap-5 md:flex">
         <ul
+          role="navigation"
           class="flex items-center gap-5 font-karla text-base uppercase text-dark-grayish-violet"
         >
           <li>
@@ -84,12 +85,13 @@
     <!-- mobile menu as a separate div -->
     <div class="relative">
       <div
+        role="menu"
         id="mobileMenu"
         class="absolute left-0 z-50 hidden min-h-[36.25rem] w-screen bg-very-dark-violet bg-mobile-pattern bg-contain bg-bottom bg-no-repeat drop-shadow-lg md:hidden"
       >
         <ul
           id="mobileMenuList"
-          role="list"
+          role="navigation"
           class="invisible flex flex-col gap-5 bg-transparent pt-10 text-center font-karla text-xl font-semibold uppercase text-very-light-gray"
         >
           <li><a href="#">How we work</a></li>
@@ -107,7 +109,8 @@
 
     <!-- hero/main section -->
     <main
-      role="site-main-section"
+      role="main"
+      aria-roledescription="main section including text and banner"
       class="relative z-10 mx-auto max-w-screen-fixed-width bg-dark-violet"
     >
       <div class="md:flex">
@@ -167,7 +170,7 @@
     <!-- END hero/main section -->
 
     <!-- cards section -->
-    <section role="site-cards-section" class="px-4 py-32 md:px-8 lg:px-24">
+    <section role="contentinfo" class="px-4 py-32 md:px-8 lg:px-24">
       <div class="mx-auto max-w-screen-fixed-width">
         <h1
           class="relative text-center font-dm text-5xl capitalize text-very-dark-violet before:absolute before:-inset-10 before:mx-auto before:block before:h-[0.08rem] before:w-40 before:bg-violet-500 before:opacity-60 md:text-left md:before:left-0 md:before:mx-0"
@@ -232,7 +235,7 @@
     <!-- END card section -->
 
     <!-- how we work section -->
-    <section role="site-content" class="mx-4 mb-32">
+    <section role="contentinfo" class="mx-4 mb-32">
       <div class="mx-auto max-w-screen-fixed-width">
         <div
           class="relative z-10 bg-dark-violet py-[4.8rem] text-center lg:flex lg:flex-wrap lg:items-center lg:justify-between lg:px-32"
@@ -265,7 +268,6 @@
 
     <!-- start footer -->
     <footer
-      role="site-footer"
       class="bg-very-light-gray bg-footer-mobile-pattern bg-contain bg-top bg-no-repeat py-16 md:px-8 lg:px-24"
     >
       <div class="mx-auto max-w-screen-fixed-width">
